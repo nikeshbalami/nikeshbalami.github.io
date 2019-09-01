@@ -192,7 +192,7 @@ strong {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	padding: 100px 170px
+	padding: 80px 170px
 }
 
 @media screen and (max-width:1280px) {
