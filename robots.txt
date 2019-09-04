@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://nikeshbalami.github.io/sitemap.xml
+Sitemap: https://nikeshbalami.com.np/sitemap.xml
