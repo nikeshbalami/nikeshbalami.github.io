@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<head>
 <div id="site">
   {% include intro.html %}
   {% include background.html %}
@@ -10,3 +10,15 @@ layout: default
   {% include other-projects.html %}
   {% include footer.html %}
 </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147514602-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147514602-1');
+</script>
+
+
+</head>
