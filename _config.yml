@@ -1,8 +1,8 @@
 # Site settings
 name: Nikesh Balami
 title: Nikesh Balami | Personal Website
-description: A civic entrepreneur, open data advocate and tech researcher
-url: https://nikeshbalami.github.io
+description: Nikesh is a civic entrepreneur, open data advocate and tech researcher. He is a strong supporter of open source software and believes in the vision of Open Knowledge to empower citizens regarding technology usage and open data. He loves coffee chat, tweeting, hackathons, blogging, traveling and open data.
+url: http://nikeshbalami.com.np/
 baseurl: ''
 email: nikeshbalami@gmail.com
 cover: https://nikeshbalami.github.io/img/og.png
