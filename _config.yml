@@ -9,12 +9,8 @@ cover: https://nikeshbalami.github.io/img/og.png
 logo: https://nikeshbalami.github.io/img/emojis/technologist.png
 resume: https://nikeshbalami.github.io/resume.pdf
 social:
-  - title: blog
-    url: https://medium.com/@nikeshbalami
   - title: twitter
     url: https://twitter.com/nikeshbalami
-  - title: instagram
-    url: https://instagram.com/nikeshbalami
   - title: github
     url: https://github.com/nikeshbalami
   - title: linkedin

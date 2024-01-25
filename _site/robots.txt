@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://nikeshbalami.com.np/sitemap.xml
