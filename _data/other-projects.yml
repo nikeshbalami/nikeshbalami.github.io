@@ -1,3 +1,11 @@
+- name: Open Data Awareness Program
+  url: http://odap.oknp.org/
+  description: Open Data Awareness Program aims to raise awareness about the concept and usage of open data to Nepal’s digital natives (university students from different academic backgrounds), who are the potential future decision-makers in government, civil society, and the private sector.
+
+- name: Local Government (LG) Data Fellowship
+  url: https://fellowship.oknp.org/
+  description: The LG Data fellowship aims to assist municipal bodies in getting the data digitized and better used for decision-making. It offers the opportunity to work closely with various personnel in municipalities and other stakeholders.
+
 - name: AskNepal
   url: https://asknepal.info/en
   description: A collaborative project of Open Knowledge Nepal and Code for Nepal, AskNepal helps access information about local government, central government, parliament, state-funded schools, universities, hospitals and other public authorities.
@@ -13,7 +21,3 @@
 - name: NepalMap
   url: https://nepalmap.org/
   description: NepalMap is a web app that puts data about Nepal at your fingertips. NepalMap helps users to find and understand data on Nepal easily, and will be useful to anyone who seeks to learn more about Nepal via data.
-
-- name: Hack for Nepal
-  url: http://hackfornepal.org
-  description: Hack for Nepal initiative brings different kinds of a global hackathon in Nepal. It is collaboratively hosted by Open Knowledge Nepal and Code for Nepal.
