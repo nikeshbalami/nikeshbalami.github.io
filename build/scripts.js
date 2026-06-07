@@ -1,23 +1,16 @@
-const eslint = require('gulp-eslint');
+const { src, dest } = require('gulp');
+const eslint = require('gulp-eslint-new');
 const uglify = require('gulp-uglify');
-
+ 
 const jsPath = '_scripts/*.js';
-const destPath = '_site/js';
-
-module.exports = gulp => {
-  gulp.task('scripts', () => {
-    return (
-      gulp
-        .src(jsPath)
-        .pipe(
-          eslint({
-            useEslintrc: true,
-          })
-        )
-        .pipe(eslint.format())
-        // .pipe(uglify())
-        .pipe(gulp.dest(destPath))
-        .pipe(gulp.dest('js'))
-    );
-  });
-};
+ 
+function scriptsTask() {
+  return src(jsPath)
+    .pipe(eslint({ overrideConfigFile: true }))
+    .pipe(eslint.format())
+    .pipe(uglify())
+    .pipe(dest('_site/js'))
+    .pipe(dest('js'));
+}
+ 
+module.exports = { task: scriptsTask };

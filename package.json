@@ -1,28 +1,29 @@
 {
-  "name": "brittanychiang.com",
-  "version": "0.0.0",
-  "description": "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
+  "name": "nikeshbalami.com.np",
+  "version": "1.0.0",
+  "description": "Personal website of Nikesh Balami — civic entrepreneur, open data advocate and tech researcher",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/bchiang7.github.io"
+    "url": "https://github.com/nikeshbalami/nikeshbalami.github.io"
   },
-  "homepage": "https://github.com/bchiang7/bchiang7.github.io",
+  "homepage": "https://nikeshbalami.com.np",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve",
     "build": "gulp build"
   },
-  "author": "Brittany Chiang",
+  "author": "Nikesh Balami",
   "license": "ISC",
   "devDependencies": {
-    "@nuscout/eslint-config": "^0.2.1",
-    "browser-sync": "^2.26.7",
-    "gulp": "3.9.1",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "3.10.0",
-    "gulp-eslint": "6.0.0",
-    "gulp-imagemin": "6.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "3.0.2"
+    "browser-sync": "^3.0.4",
+    "eslint": "^8.57.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-eslint-new": "^2.6.2",
+    "gulp-imagemin": "^9.2.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.100.0"
   }
 }

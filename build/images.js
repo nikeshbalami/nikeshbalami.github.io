@@ -1,13 +1,18 @@
-const imagemin = require('gulp-imagemin');
-
+const { src, dest } = require('gulp');
+ 
 const imgPath = 'img/**/*.+(png|jpg|gif|svg)';
-const destPath = '_site/img';
-
-module.exports = gulp => {
-  gulp.task('images', () => {
-    return gulp
-      .src(imgPath)
+ 
+// gulp-imagemin v9+ is ESM-only; we use a dynamic import wrapper so the
+// rest of the build can stay CommonJS.
+async function imagesTask() {
+  const { default: imagemin } = await import('gulp-imagemin');
+  return new Promise((resolve, reject) => {
+    src(imgPath)
       .pipe(imagemin())
-      .pipe(gulp.dest(destPath));
+      .pipe(dest('_site/img'))
+      .on('end', resolve)
+      .on('error', reject);
   });
-};
+}
+ 
+module.exports = { task: imagesTask };
