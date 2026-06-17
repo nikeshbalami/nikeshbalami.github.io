@@ -1,18 +1,4 @@
 $(function() {
-  const body = document.querySelector('body');
-  const toggle = document.getElementById('toggle');
-  const input = document.getElementById('switch');
-
-  input.checked = true; // knob starts on right (sun side) = light mode
-
-  input.addEventListener('change', function() {
-    if (input.checked) {
-      body.classList.remove('night'); // knob on sun (right) = light
-    } else {
-      body.classList.add('night');    // knob on moon (left) = dark
-    }
-  });
-
   const introHeight = document.querySelector('.intro').offsetHeight;
   const topButton = document.getElementById('top-button');
   const $topButton = $('#top-button');
