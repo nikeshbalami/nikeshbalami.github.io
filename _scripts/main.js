@@ -3,12 +3,13 @@ $(function() {
   const toggle = document.getElementById('toggle');
   const input = document.getElementById('switch');
 
-  toggle.addEventListener('click', function() {
-    const isChecked = input.checked;
-    if (isChecked) {
-      body.classList.remove('night');
+  input.checked = true; // knob starts on right (sun side) = light mode
+
+  input.addEventListener('change', function() {
+    if (input.checked) {
+      body.classList.remove('night'); // knob on sun (right) = light
     } else {
-      body.classList.add('night');
+      body.classList.add('night');    // knob on moon (left) = dark
     }
   });
 

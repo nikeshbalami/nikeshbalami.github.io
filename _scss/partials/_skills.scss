@@ -1,25 +1,23 @@
 .skills {
   .skillz {
     display: flex;
-    justify-content: space-between;
-    @include weird-medium {
-      flex-wrap: wrap;
-    }
-    &__category {
-      @include weird-medium {
-        width: 47%;
-        margin-right: 5px;
-        margin-bottom: 25px;
-      }
-      &__label {
-        font-weight: 700;
-        color: $black;
-        text-transform: uppercase;
-      }
-      &__item {
-        margin: 3px 0;
-        font-size: 0.9rem;
-      }
+    flex-wrap: wrap;
+    gap: 10px;
+    &__item {
+      display: inline-block;
+      font-family: $Apercu;
+      font-size: 0.85rem;
+      font-weight: 300;
+      padding: 5px 12px;
+      border-radius: 3px;
+      color: $black;
+      border: 1px solid $black;
+      background: transparent;
     }
   }
+}
+
+.night .skills .skillz__item {
+  color: $off-white;
+  border-color: $off-white;
 }

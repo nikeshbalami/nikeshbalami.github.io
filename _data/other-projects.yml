@@ -14,16 +14,6 @@
     - thing: Government
     - thing: Data Management
 
-- name: AskNepal
-  url: https://asknepal.info/en
-  code: https://github.com/okfn-nepal/asknepal
-  description: A collaborative project of Open Knowledge Nepal and Code for Nepal, AskNepal helps access information about local government, central government, parliament, state-funded schools, universities, hospitals and other public authorities.
-  used:
-    - thing: Python
-    - thing: Django
-    - thing: Right to Information
-    - thing: Civic Tech
-
 - name: Local Boundaries
   url: http://localboundries.oknp.org/
   code: https://github.com/okfn-nepal/local-boundaries
