@@ -1,0 +1,31 @@
+languages:
+  - item: Python
+  - item: JavaScript
+  - item: HTML
+  - item: CSS/Sass
+  - item: SQL
+  - item: R
+
+frameworks:
+  - item: Jekyll
+  - item: Flask
+  - item: React
+  - item: D3.js
+  - item: Bootstrap
+  - item: Node.js
+
+tools:
+  - item: Git & GitHub
+  - item: CKAN
+  - item: QGIS
+  - item: Jupyter Notebook
+  - item: Gulp
+  - item: Google Analytics
+
+concepts:
+  - item: Open Data
+  - item: Civic Technology
+  - item: Data Visualization
+  - item: GIS & Mapping
+  - item: Community Building
+  - item: Open Source

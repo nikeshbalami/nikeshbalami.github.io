@@ -1,23 +1,55 @@
 - name: Open Data Awareness Program
   url: http://odap.oknp.org/
-  description: Open Data Awareness Program aims to raise awareness about the concept and usage of open data to Nepal’s digital natives (university students from different academic backgrounds), who are the potential future decision-makers in government, civil society, and the private sector.
+  description: Open Data Awareness Program aims to raise awareness about the concept and usage of open data to Nepal's digital natives (university students from different academic backgrounds), who are the potential future decision-makers in government, civil society, and the private sector.
+  used:
+    - thing: Open Data
+    - thing: Community Building
+    - thing: Civic Tech
 
 - name: Local Government (LG) Data Fellowship
   url: https://fellowship.oknp.org/
   description: The LG Data fellowship aims to assist municipal bodies in getting the data digitized and better used for decision-making. It offers the opportunity to work closely with various personnel in municipalities and other stakeholders.
+  used:
+    - thing: Open Data
+    - thing: Government
+    - thing: Data Management
 
 - name: AskNepal
   url: https://asknepal.info/en
+  code: https://github.com/okfn-nepal/asknepal
   description: A collaborative project of Open Knowledge Nepal and Code for Nepal, AskNepal helps access information about local government, central government, parliament, state-funded schools, universities, hospitals and other public authorities.
+  used:
+    - thing: Python
+    - thing: Django
+    - thing: Right to Information
+    - thing: Civic Tech
 
 - name: Local Boundaries
   url: http://localboundries.oknp.org/
+  code: https://github.com/okfn-nepal/local-boundaries
   description: Local Boundaries brings the detailed geodata of administrative units or maps of all administrative boundary defined by Nepal Government, in open and reusable format, free of cost. The local boundaries are available in two formats (TopoJSON and GeoJSON) and can be easily reused to map local authority data to OpenStreetMap, Google Map, Leaflet or MapBox interactively.
+  used:
+    - thing: GeoJSON
+    - thing: TopoJSON
+    - thing: GIS
+    - thing: OpenStreetMap
+    - thing: Leaflet
 
 - name: Open Data Handbook Nepali Version
   url: http://handbook.oknp.org/
   description: Translation version of international Open Data Handbook which help Government policy makers, leaders and common citizens to understand about Data in their Native language easily and CSO can take their awareness program in next level by using the resources.
+  used:
+    - thing: Open Data
+    - thing: Localization
+    - thing: Jekyll
 
 - name: NepalMap
   url: https://nepalmap.org/
+  code: https://github.com/CodeForNepal/nepalmap_app
   description: NepalMap is a web app that puts data about Nepal at your fingertips. NepalMap helps users to find and understand data on Nepal easily, and will be useful to anyone who seeks to learn more about Nepal via data.
+  used:
+    - thing: Python
+    - thing: Django
+    - thing: D3.js
+    - thing: Census Data
+    - thing: Data Visualization
