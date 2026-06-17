@@ -4,6 +4,22 @@
     margin-bottom: 50px;
     &__name {
       margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &__code {
+      display: inline-flex;
+      align-items: center;
+      opacity: 0.5;
+      @include transition;
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+      &:hover {
+        opacity: 1;
+      }
     }
     p {
       font-size: 0.9rem;

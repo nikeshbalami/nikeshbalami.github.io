@@ -9,8 +9,9 @@ cover: https://nikeshbalami.github.io/img/og.png
 logo: https://nikeshbalami.github.io/img/emojis/technologist.png
 resume: https://nikeshbalami.github.io/resume.pdf
 social:
-  - title: twitter
-    url: https://twitter.com/nikeshbalami
+  - title: X/Twitter
+    url: https://x.com/nikeshbalami
+    icon: twitter
   - title: github
     url: https://github.com/nikeshbalami
   - title: linkedin
