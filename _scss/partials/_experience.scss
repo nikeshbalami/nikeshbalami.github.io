@@ -1,32 +1,80 @@
 .experience {
   .jobs {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .job {
-    margin-bottom: 25px;
-    .time-place {
-      display: flex;
-      justify-content: space-between;
-      @include mobile {
-        display: block;
-      }
-    }
+    margin-bottom: 28px;
     &__company {
       font-weight: 700;
+      margin-bottom: 8px;
+    }
+    &__roles {
+      margin-top: 4px;
+    }
+    &__role {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 0 4px 20px;
+      @include mobile {
+        display: block;
+        padding-left: 20px;
+      }
+      // dot — perfectly centered with transform
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+        background: $white;
+        z-index: 1;
+      }
+      // filled dot for current (first) role
+      &:first-child::before {
+        background: $blue;
+      }
+      // vertical line connecting roles — only between items
+      &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 3px;
+        top: calc(50% + 6px);
+        bottom: -6px;
+        width: 2px;
+        background: lighten($grey, 22%);
+      }
+    }
+    &__position {
+      font-size: 0.9rem;
     }
     &__time {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-family: 'Inconsolata', monospace;
+      color: $grey;
+      white-space: nowrap;
+      margin-left: 15px;
+      flex-shrink: 0;
       @include mobile {
-        font-size: 0.8rem;
+        margin-left: 0;
+        margin-top: 2px;
+        font-size: 0.75rem;
       }
     }
   }
+  .resume-link {
+    margin-top: 20px;
+  }
   .arrow-link {
-    font-size: 1.25rem;
+    font-size: 1rem;
     &:after {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
   }
 }

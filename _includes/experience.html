@@ -1,20 +1,33 @@
 <section class="section experience">
-  <div class="section__title">Engagement</div>
+  <div class="section__title">Current Engagements</div>
   <div class="section__content">
     <div class="jobs">
       {% for job in site.data.experience %}
       <div class="job">
-        <div class="time-place">
-          <div class="job__company">
-            <a href="{{job.url}}" target="_blank">{{job.company}}</a>
-          </div>
-          <div class="job__time">{{job.time}}</div>
+        <div class="job__company">
+          <a href="{{job.url}}" target="_blank">{{job.company}}</a>
         </div>
-        <div class="job__position">{{job.position}}</div>
+        <div class="job__roles">
+          {% if job.roles %}
+            {% for role in job.roles %}
+            <div class="job__role">
+              <div class="job__position">{{role.position}}</div>
+              <div class="job__time">{{role.time}}</div>
+            </div>
+            {% endfor %}
+          {% else %}
+            <div class="job__role">
+              <div class="job__position">{{job.position}}</div>
+              <div class="job__time">{{job.time}}</div>
+            </div>
+          {% endif %}
+        </div>
       </div>
       {% endfor %}
     </div>
 
-    <a href="https://nikeshbalami.github.io/resume.pdf" target="_blank" class="arrow-link">View My Resume</a>
+    <div class="resume-link">
+      <a href="https://nikeshbalami.github.io/resume.pdf" target="_blank" class="arrow-link">View My Resume</a>
+    </div>
   </div>
 </section>
