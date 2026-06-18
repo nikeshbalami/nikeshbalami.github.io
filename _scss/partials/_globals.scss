@@ -1,11 +1,11 @@
 // Colors
-$night: #171c28;
-$black: #36363c;
-$dark-grey: #444452;
-$grey: #777777;
-$blue: #007bff;
-$slate: #afafbf;
-$off-white: #e7e7e7;
+$night: #0F172A;
+$black: #1E293B;
+$dark-grey: #334155;
+$grey: #64748B;
+$blue: #4F46E5;
+$slate: #94A3B8;
+$off-white: #F1F5F9;
 $white: #ffffff;
 $green: #bae67e;
 $purple: #7d0ce8;
@@ -14,9 +14,9 @@ $orange: #e8850c;
 $yellow: #ffdc00;
 $accent: #ffcc66;
 // Fonts
-$font-stack: 'Source Sans Pro', system, system-ui, -apple-system,
+$font-stack: 'Inter', system-ui, -apple-system,
   BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-$Apercu: 'Apercu', $font-stack;
+$Apercu: 'Inter', $font-stack;
 // Media queries
 $fifteen-inch: 1440px;
 $thirteen-inch: 1280px;

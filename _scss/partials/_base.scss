@@ -9,7 +9,8 @@ html {
 }
 
 ::selection {
-  background: $yellow;
+  background: #C7D2FE;
+  color: $black;
 }
 
 html,
@@ -21,7 +22,7 @@ body {
   background-color: $white;
   color: $dark-grey;
   font-family: $Apercu;
-  line-height: 1.5;
+  line-height: 1.6;
   width: 100%;
 
   &.night {
@@ -226,6 +227,10 @@ strong {
   img {
     width: 100%;
   }
+}
+
+.background .section__content p {
+  font-size: 0.9rem;
 }
 
 .waypoint {
