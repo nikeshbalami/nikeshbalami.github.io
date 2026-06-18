@@ -77,17 +77,11 @@
         font-size: 0.9rem;
         display: inline;
         letter-spacing: 1px;
-        @include little-desktop {
-          display: none;
-        }
       }
     }
     img {
       display: none;
       width: 22px;
-      @include little-desktop {
-        display: inline-block;
-      }
     }
   }
 }

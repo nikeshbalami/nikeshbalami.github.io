@@ -1,46 +1,20 @@
 <section class="section featured-projects">
   <div class="section__title">Featured Projects</div>
   <div class="section__content">
+    {% for project in site.data.featured-projects %}
     <div class="project blistabloc">
       <figure class="project__pic">
-        <a href="https://idms.oknp.org/" target="_blank">
-          <img src="{{site.baseurl}}/img/featured/idms/idms.png" alt="">
+        <a href="{{project.url}}" target="_blank">
+          <img src="{{site.baseurl}}/img/featured/{{project.image}}" alt="{{project.name}}">
         </a>
       </figure>
       <figcaption class="project__caption">
         <div class="project__name">
-          <a href="https://idms.oknp.org/" target="_blank">Integrated Data Management System</a>
+          <a href="{{project.url}}" target="_blank">{{project.name}}</a>
         </div>
-        <p>IDMS is a comprehensive and interoperable digital platform meticulously designed to facilitate seamless inter-governmental data sharing and the efficient dissemination of valuable data in the public domain, adhering to the FAIR principles.</p>
+        <p>{{project.description}}</p>
       </figcaption>
     </div>
-
-    <div class="project blistabloc">
-      <figure class="project__pic">
-        <a href="https://opendatanepal.com/" target="_blank">
-          <img src="{{site.baseurl}}/img/featured/opendatanepal/opendatanepal.png" alt="">
-        </a>
-      </figure>
-      <figcaption class="project__caption">
-        <div class="project__name">
-          <a href="https://opendatanepal.com/" target="_blank">Open Data Nepal</a>
-        </div>
-        <p>Open Data Nepal is a civil society initiative to make Nepal’s data accessible online perpetually. The portal allows users to publish, explore, download and use data to make their own visualisations, apps and services without any restriction.</p>
-      </figcaption>
-    </div>
-
-    <div class="project blistabloc">
-      <figure class="project__pic">
-        <a href="https://womenindatanepal.org/" target="_blank">
-          <img src="{{site.baseurl}}/img/featured/womenindatanepal/womenindatanepal.png" alt="">
-        </a>
-      </figure>
-      <figcaption class="project__caption">
-        <div class="project__name">
-          <a href="https://womenindatanepal.org/" target="_blank">Women in Data Steering Committee</a>
-        </div>
-        <p>Women in Data Steering Committee work together to identify possible existing problems targeted around women and the scope of area in today’s society. Alongside this identification, the committee will uphold itself as a platform to solve these problems.</p>
-      </figcaption>
-    </div>
+    {% endfor %}
   </div>
 </section>

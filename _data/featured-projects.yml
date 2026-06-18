@@ -1,0 +1,14 @@
+- name: Integrated Data Management System
+  url: https://idms.oknp.org/
+  image: idms/idms.png
+  description: IDMS is a comprehensive and interoperable digital platform meticulously designed to facilitate seamless inter-governmental data sharing and the efficient dissemination of valuable data in the public domain, adhering to the FAIR principles.
+
+- name: Open Data Nepal
+  url: https://opendatanepal.com/
+  image: opendatanepal/opendatanepal.png
+  description: Open Data Nepal is a civil society initiative to make Nepal's data accessible online perpetually. The portal allows users to publish, explore, download and use data to make their own visualisations, apps and services without any restriction.
+
+- name: Women in Data Steering Committee
+  url: https://womenindatanepal.org/
+  image: womenindatanepal/womenindatanepal.png
+  description: Women in Data Steering Committee work together to identify possible existing problems targeted around women and the scope of area in today's society. Alongside this identification, the committee will uphold itself as a platform to solve these problems.

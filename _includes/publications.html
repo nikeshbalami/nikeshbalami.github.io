@@ -1,0 +1,21 @@
+<section class="section publications">
+  <div class="section__title">Publications</div>
+  <div class="section__content">
+    <div class="pub-list">
+      {% for pub in site.data.publications %}
+      <div class="pub">
+        <div class="pub__header">
+          <span class="pub__title">{{pub.title}}</span>
+          <span class="pub__type">{{pub.type}}</span>
+        </div>
+        <div class="pub__meta">
+          {% if pub.co_authors %}
+          <span class="pub__authors">Co-authored with {{pub.co_authors}} &middot; </span>
+          {% endif %}
+          <span class="pub__publisher">{{pub.publisher}}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

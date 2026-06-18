@@ -1,0 +1,53 @@
+.publications {
+  .pub-list {
+    margin-bottom: 10px;
+  }
+
+  .pub {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba($grey, 0.3);
+
+    &:first-child {
+      border-top: 1px solid rgba($grey, 0.3);
+    }
+
+    &__header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: $black;
+      flex: 1;
+    }
+
+    &__type {
+      font-size: 0.7rem;
+      font-family: 'Inconsolata', monospace;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: $blue;
+      background: rgba($blue, 0.1);
+      padding: 2px 8px;
+      border-radius: 3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    &__meta {
+      margin-top: 4px;
+      font-size: 0.8rem;
+      color: $grey;
+      font-family: 'Inconsolata', monospace;
+    }
+
+    &__authors {
+      color: $dark-grey;
+    }
+  }
+}

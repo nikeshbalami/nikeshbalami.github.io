@@ -13,6 +13,11 @@
       color: $black;
       border: 1px solid $black;
       background: transparent;
+      transition: background 0.2s, color 0.2s;
+      &:hover {
+        background: $black;
+        color: #fff;
+      }
     }
   }
 }
